@@ -7,16 +7,33 @@
     <title>Arcade Universe</title>
 </head>
 <body>
-    <nav>
+    <main>
+    <nav class="mobile-desktop">
         <img src="./images/logo.png" id="logo" alt="">
         <div class="links">
             <button type="submit">Play Game</button>
             <a href="#about" >About</a>
-            <a href="#feature">Feautures</a>
+            <a href="#feature">Features</a>
             <a href="#socials">Contact Us</a>
         </div>
     </nav>
-    
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="#"><li>Play Game</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#feature"><li>Feature</li></a>
+            <a href="socials"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>    
+
     <section id="one">
     <div class="image-container">
         <img id="one-img" src="./images/2.png" alt="">
@@ -73,5 +90,6 @@
     <footer>
         Mikail Ajibola ALX MVP Project. 2024
     </footer>
+</main>
 </body>
 </html>
