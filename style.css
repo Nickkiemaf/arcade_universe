@@ -12,12 +12,17 @@ body{
 }
 
 main{
-    max-width: 1480px;
+    max-width: 2480px;
     margin: auto;
 }
 
 .mobile-desktop{
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
@@ -26,7 +31,7 @@ main{
     border-bottom: 1px solid black;
 }
 
-.mobile{
+#menuToggle{
     display: none;
 }
 
@@ -116,7 +121,6 @@ main{
 }
 
 #feature{
-    border: 2px solid red;
     /* background-image: url("./images/3.png");
     background-repeat: no-repeat;
     background-size: 150%; */
@@ -140,6 +144,7 @@ main{
 }
 
 .feature-list{
+    max-width: 1500px;
     display: flex;
     justify-content: space-around;
     /* flex-wrap: wrap; */
@@ -149,7 +154,7 @@ main{
 
 .feature-list li{
     background-color: #f0f8ff;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
     margin: 10px;
     /* flex: 1 1 30%; */
@@ -246,7 +251,7 @@ footer{
         overflow-x: hidden;
     }
 
-    .mobile{
+    /* .mobile{
         display: flex;
         border: solid 2px white;
         height: 50px;
@@ -254,9 +259,9 @@ footer{
         z-index: 10;
         right: 0;
         left: 0;
-        top: 0; /*stick to top*/
+        top: 0; /*stick to top
         background: transparent;
-    }
+    } */
 
     #logo{
         height: 30px;
@@ -309,8 +314,8 @@ footer{
 
 #menuToggle{
   display: block;
-  position: relative;
-  top: 50px;
+  position: fixed;
+  top: 10px;
   right: 30px;
   left: 0px;
   z-index: 1;
